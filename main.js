@@ -16,9 +16,11 @@ rect.style.top = 0;
 const growRect = function () {
     if (size > window.innerHeight / 2) {
         grow = false;
+        rect.style.backgroundColor = 'red';
     }
     else if (size <= 0) {
         grow = true;
+        rect.style.backgroundColor = 'green';
     }
     if (grow == true) {
         size += 10;
